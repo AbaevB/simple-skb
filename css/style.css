@@ -40,6 +40,7 @@ a {
   --dove-gray-color: #666;
   --bombay-color: #b5b5bd;
   --active-color: #4946b4;
+  --focus-color: #dad9fb;
 }
 
 .btn-reset {
@@ -93,6 +94,55 @@ a {
   margin-right: 26px;
 }
 
+.header__btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__btn  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-color);
+}
+
+.header__btn svg  {
+  stroke: currentColor;
+}
+
+.header__btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: var(--focus-color) ;
+   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__btn:focus  {
+  outline: none;
+}
+
+.header__btn.focus-visible::after {
+  opacity: 1;
+}
+
+.header__btn:hover  {
+  color: var(--accent-color);
+}
+
+.header__btn:active {
+  color: var(--active-color);
+}
+
+
+
 .header__nav {
   margin-right: 50px;
 }
@@ -106,10 +156,42 @@ a {
 }
 
 .nav__link {
+  position: relative;
+  z-index: 1;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   color: var(--title-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -7px;
+  top: -4px;
+  right: -7px;
+  bottom: -4px;
+  background-color: var(--focus-color) ;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav__link:focus  {
+  outline: none;
+}
+
+.nav__link.focus-visible::after  {
+  opacity: 1;
+}
+
+.nav__link:hover  {
+  color: var(--accent-color);
+}
+
+.nav__link:active {
+  color: var(--active-color);
 }
 
 /*---------------------HERO----------------------*/
@@ -150,6 +232,28 @@ a {
   line-height: 23px;
   color: var(--accent-color);
   border: 1px solid currentColor;
+  transition: color 0.3s ease-in-out border-color 0.3s ease-in-out background-color 0.3s ease-in-out ;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link.focus-visible {
+  color: var(--accent-color);
+  background-color: var(--focus-color);
+}
+
+.link:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.link:active  {
+  color: #fff;
+  background-color: var(--active-color);
+  border-color: var(--active-color);
 }
 
 /*---------------------RESULT----------------------*/
