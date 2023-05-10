@@ -117,7 +117,7 @@ a {
   padding-top: 60px;
 }
 
-.header__content {
+.hero__content {
   padding-top: 70px;
 }
 
@@ -286,4 +286,28 @@ border: 1px solid #c4c4c4;
 .partners__list   {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+/*---------------------SKETCHBOOK----------------------*/
+
+.sketchbook {
+  padding-top: 90px;
+}
+
+.sketchbook__content  {
+  padding-top: 25px;
+}
+
+.sketchbook__title  {
+  margin-bottom: 10px;
+}
+
+.sketchbook__descr  {
+  margin-bottom: 30px;
+  line-height: 170%;
+
+}
+
+.sketchbook__link {
+  padding: 22px 94px;
 }
