@@ -357,15 +357,48 @@ a {
 }
 
 .products__item__link {
+  position: relative;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: var(--accent-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .products__item__link svg {
   fill: currentColor;
 }
+
+.products__item__link::after  {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -6px;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  background-color: var(--focus-color) ;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products__item__link:focus {
+  outline: none;
+}
+
+.products__item__link.focus-visible::after {
+  opacity: 1;
+}
+
+.products__item__link:hover {
+  color: var(--active-color);
+}
+
+.products__item__link:active  {
+  color: var(--active-color);
+}
+
+
 
 /*---------------------PARTNERS----------------------*/
 
@@ -440,6 +473,12 @@ border: 1px solid #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.social__link svg {
+  fill: currentColor;
 }
 
 .footer__bottom {
