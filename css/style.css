@@ -194,6 +194,22 @@ a {
   color: var(--active-color);
 }
 
+.search-form  {
+  position: relative;
+  width: 224px;
+}
+
+.search-form__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d1d1e5;
+}
+
+.search-form__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /*---------------------HERO----------------------*/
 .hero {
   padding-top: 60px;
