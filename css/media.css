@@ -75,4 +75,36 @@
   .products-item__descr {
     min-width: 95%;
   }
+  /*------------------PRODUCTS------------------*/
+  .partners {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+  .partners__item {
+    height: 80px;
+  }
+  .partners__item img {
+    min-width: 94%;
+  }
+
+  /*------------------SKETCHBOOK------------------*/
+
+.sketchbook {
+  padding-top: 34px;
+  padding-bottom: 36px;
+  background-image: url("../img/sketch-image-690.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
+
+.sketchbook__img  {
+  display: none;
+}
+
+.sketchbook__title  {
+  margin-bottom: 23px;
+}
+}
+
+
