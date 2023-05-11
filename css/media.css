@@ -1,4 +1,5 @@
 @media (max-width: 992px) {
+  /*------------------HEADER------------------*/
   .header {
     padding-top: 10px;
     padding-bottom: 19px;
@@ -19,5 +20,43 @@
   .nav__list  {
     width: 100%;
     justify-content: space-between;
+  }
+  /*------------------HERO------------------*/
+  .title  {
+    line-height: 100%;
+    font-size: 50px;
+  }
+
+  .hero__content  {
+    padding-top: 5px;
+  }
+  /*------------------RESULT------------------*/
+  .result {
+    padding: 60px 0;
+  }
+  .result__item {
+    padding-top: 138px;
+    padding-left: 0;
+    background-position: left 19px;
+  }
+  .result__top  {
+    margin-bottom: 3px;
+
+  }
+  .result__content  {
+    padding-top: 0;
+  }
+
+  .second-title {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .result__subtitle {
+    margin-bottom: 21px;
+  }
+
+  .result__subdescr.descr:not(:last-child)  {
+    margin-bottom: 13px;
   }
 }
