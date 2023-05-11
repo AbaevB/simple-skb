@@ -398,6 +398,7 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
+  height: 100%;
 }
 
 .products-item__image {
@@ -422,12 +423,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .products-item__descr {
-  margin-bottom: auto;
   margin-bottom: 20px;
   line-height: 170%;
 }
 
 .products-item__link {
+  margin-top: auto;
   position: relative;
   font-weight: 400;
   font-size: 20px;

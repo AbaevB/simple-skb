@@ -59,4 +59,20 @@
   .result__subdescr.descr:not(:last-child)  {
     margin-bottom: 13px;
   }
+  /*------------------PRODUCTS------------------*/
+  .products {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .products-item  {
+    padding-bottom: 60px;
+  }
+  .products-item__image {
+    margin-bottom: 17px;
+  }
+
+  .products-item__descr {
+    min-width: 95%;
+  }
 }
